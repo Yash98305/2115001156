@@ -10,10 +10,6 @@ const generateUniqueProducts = (products) => {
 }
 
 
-  
-    const response = await axios.get(url, {
-      headers: {
-        Authorization: `Bearer ${process.env.ACCESS_TOKEN}`,
 const sortProducts = (products, sortBy, order) => {
     return products.sort((a, b) => {
         if (order === 'asc') {
